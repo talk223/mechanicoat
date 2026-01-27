@@ -85,7 +85,7 @@ body {
   position: fixed;
   inset: 0;
   background-image: url("poat.jpg");
-  background-size: 90%;
+  background-size: 100%;
   background-position: center;
   z-index: -1;
   transition: opacity 0.12s linear;
