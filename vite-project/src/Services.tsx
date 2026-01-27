@@ -10,6 +10,8 @@ export default function Services() {
     "Brake repairs",
     "Engine diagnostics",
     "Transmission services",
+    "Prepurchase inspections",
+    "I can do it all!"
   ];
 
   return (

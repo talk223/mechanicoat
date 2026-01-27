@@ -16,9 +16,9 @@ body {
 }
 
 .nav {
-  list-style: none;        /* remove bullets */
-  display: flex;           /* side-by-side */
-  gap: 24px;               /* space between buttons */
+  list-style: none;        
+  display: flex;           
+  gap: 24px;               
   margin: 0;
   padding: 0;
 }
@@ -33,4 +33,68 @@ body {
 
 .nav li a:hover {
   background-color: #333;
+}
+
+.title, .ContactMe h2 {
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.card {
+  width: 800px;
+  min-height: 600px;
+  padding: 25px;
+  border-radius: 18px;          /* soft edges */
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  /* soft shadow */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-image1{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.bg-image {
+  position: fixed;
+  inset: 0;
+  background-image: url("poat.jpg");
+  background-size: 90%;
+  background-position: center;
+  z-index: -1;
+  transition: opacity 0.12s linear;
+}
+
+/* Dark overlay for readability */
+.bg-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
 }
